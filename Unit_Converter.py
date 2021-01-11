@@ -10,13 +10,13 @@ resultin= tk.IntVar()   # Define the result
 uf = tk.StringVar() # Define the first unit as a string(text) variable
 us = tk.StringVar() # Define the second unit as a string(text) variable
 # --- Function---
-def conv(): # Define the function "conv"
+def conv(): # Define the function "conv" for the unit conversion
     a = lengthunits.LengthUnit(userin.get(),f'{uf.get()}',f'{us.get()}').doconvert() # input number, input unit, reslut unit and convert and round
     #a = '{:.2f}'.format(a)
-    resultin.set(a)
-def resetf():
-    resultin.set(0)
-    userin.set(0)
+    resultin.set(a) # set a as result in resultin
+def resetf(): # Define the function reset f to rest the input and the result to zero
+    resultin.set(0) # set the result to zero
+    userin.set(0) # set the userinput to zero
 # ---- Title ----
 head = tk.Label(root,text="Unit Converter") # setup a heading
 head.grid(row=0,column=0,columnspan=2) # Position the heading
@@ -41,4 +41,3 @@ submit.grid(row=3,columnspan=2) # Position
 reset = tk.Button(root,text="RESET",command=resetf) # create a buttom
 reset.grid(row=4,columnspan=2) # Position 
 root.mainloop() #show the widget
-
