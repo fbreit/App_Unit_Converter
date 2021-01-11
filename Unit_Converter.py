@@ -1,8 +1,7 @@
 # ~~~~~~~~ UNIT CONIVERTER ~~~~~~~~
-# --- Import mudules ---
-import tkinter as tk                # Import tkinter mas tk
-from tkinter import ttk             # Import ttk modul
-from unitconvert import lengthunits # Import uniconverter modul
+import tkinter as tk  # Import tkinter mas tk
+from tkinter import ttk  # Import ttk modul
+from unitconvert import lengthunits  # Import uniconverter modul
 # --- Window ---
 root     = tk.Tk()                  # Create root widged/window
 root.geometry("150x150")            # Define teh size of the window
