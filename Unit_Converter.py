@@ -1,10 +1,10 @@
-# ~~~~~~~~ UNIT CONIVERTER ~~~~~~~~
+# ~~~~~~~~ UNIT CONVERTER ~~~~~~~~
 # --- Import modules ---
 import tkinter as tk  # Import tkinter mas tk
-from tkinter import ttk  # Import ttk modul
-from unitconvert import lengthunits  # Import uniconverter modul
+from tkinter import ttk  # Import ttk module
+from unitconvert import lengthunits  # Import uniconverter module
 # --- Window ---
-root     = tk.Tk()                  # Create root widged/window
+root     = tk.Tk()                  # Create root widget/window
 root.geometry("150x150")            # Define teh size of the window
 # --- Variables definitions ---
 userin   = tk.IntVar()              # Define the userinput
